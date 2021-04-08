@@ -6,7 +6,11 @@ type Friend {
     firstName: String
     lastName: String
     gender: String
-    email: String
+    email: [Email]!
+    }
+
+    type Email {
+        email: String
     }
 
     type Query {
